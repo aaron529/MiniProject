@@ -24,20 +24,7 @@
       <artifactId>javafx-fxml</artifactId>
       <version>22.0.1</version>
     </dependency>
-
-<dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>${junit.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>${junit.version}</version>
-      <scope>test</scope>
-    </dependency>  </dependencies>
-
+  </dependencies>
   <build>
     <plugins>
       <plugin>
@@ -55,10 +42,10 @@
         <version>0.0.8</version>
         <executions>
           <execution>
-            <!-- Default configuration for running with: mvn clean javafx:run -->
+            <!-- mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>in.sfit.miniproject.miniproject/in.sfit.miniproject.miniproject.HelloApplication</mainClass>
+              <mainClass>in.sfit.miniproject.miniproject/in.sfit.miniproject.Main</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
